@@ -1,0 +1,27 @@
+.title {
+    color: #0d0d0d;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    @include phone {
+        line-height: 34px;
+    }
+    &_consultation {
+        color: $text-color;
+        text-align: start;
+        font-size: 36px;
+        line-height: 40px;
+        @include phone {
+            display: none;
+        }
+    }
+    &_xs-visible {
+        display: none;
+        @include phone {
+            display: block;
+            color: $text-color;
+            font-weight: 500;
+        }
+    }
+}

@@ -9,8 +9,8 @@ build
 /logs
 *.log
 *.rar
-*.scss
 *.zip
+style.min.css
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

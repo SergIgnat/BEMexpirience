@@ -1,0 +1,64 @@
+.reviews {
+    min-height: 950px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 925px;
+        padding: 50px 0;
+        @include tablet_portrait {
+            min-height: 1050px;
+        }
+        @include phone {
+            padding: 10px 0;
+        }
+    }
+
+    &__item {
+        margin-top: 20px;
+        display: flex;
+        @include phone {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }       
+    }
+    &__photo {
+        margin-right: 60px;
+        @include phone {
+            margin: 20px 0;
+        }
+    }
+    &__name {
+        color: #0d0d0d;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 18px;
+        @include phone {
+            text-align: center;
+        }
+    }
+    &__marafon {
+        margin-top: 14px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px;
+        @include phone {
+            text-align: center;
+        }
+    }
+    &__descr {
+        max-width: 660px;
+        margin-top: 15px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 0 10px 0 0;
+        @include phone {
+            width: 320px;
+            text-align-last: center;
+        }
+    }
+}

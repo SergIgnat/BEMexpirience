@@ -1,0 +1,60 @@
+.advantages {
+    min-height: 470px;
+    padding: 69px 0 80px 0;
+    background-color: #f6f6f6;
+    @include tablet-portrait {
+        padding: 40px 0 40px 0;
+    }    
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include tablet-portrait {
+            flex-direction: column;
+            align-items: center
+        }
+    }
+    
+    &__icon {
+        width: 250px;
+        margin-top: 65px;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 38px;
+            @include tablet-portrait {
+                margin-bottom: 20px;
+            }           
+        }
+        @include tablet {
+            width: 215px;
+        }
+        @include phone {
+            margin-top: 35px;
+        }
+    }
+
+    &__subtitle {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
+    &__descr {
+        margin-top: 25px;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        @include tablet-portrait {
+            margin-top: 15px;
+        }
+        a {
+            color: $main-color;
+            text-decoration: underline;
+            &:hover {
+                color: $main-color; 
+            }
+        }
+    }
+}

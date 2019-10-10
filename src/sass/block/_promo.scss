@@ -1,0 +1,93 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
+    @include tablet-portrait {
+        padding: 21px 0 40px 0;
+    }
+    @include phone {
+        min-height: 520px;
+        background: url(../img/runner.jpg) center (center/cover) no-repeat;
+    }
+
+    &__wrapper {
+        margin-top: 91px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include tablet-portrait {
+            align-items: center;
+        }
+        @include phone {
+            margin-top: 45px;
+        }
+    }
+
+    &__header {
+        color: $text-color;
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        @include phone {
+            margin-top: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    &__subheader {
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $text-color;
+        margin-top: 17px;
+        @include phone {
+            margin-top: 25px;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    &__icon {
+        width: 100px;
+        color: $text-color;
+        font-size: 13px;
+        font-weight: 500;        
+    }
+    &__link {
+        margin-top: 18px;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 500;
+        @include phone {
+            margin-top: 0;
+        }
+    }
+    &__catalog {
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: $text-color;
+        &:hover {
+            color: $text-color;
+        }
+    }
+    &__icons {
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+        @include phone {
+            width: 300px;
+        }
+    }
+    &__icon {
+        width: 106px;
+        text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+}

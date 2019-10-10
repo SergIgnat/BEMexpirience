@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 250px;
+        img {
+            width: 100%;
+        }
+        @include phone {
+            width: 153px;
+        }     
+    }
+    &__official {
+        color: $text-color;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        @include tablet-portrait {
+            display: none;
+        }       
+    }
+    &__phone {
+        display: block;
+        color: $text-color;
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {
+            text-decoration: none;
+            color: $text-color;
+        }
+        @include phone {
+            font-size: 15px;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+}

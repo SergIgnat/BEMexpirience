@@ -1,0 +1,76 @@
+.button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: $main-color;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    &:hover {
+        box-shadow: 4px 3px 15px rgb(216, 12, 90);
+        cursor: pointer;
+        background-color: #ff0000;
+    }
+
+    @include phone {
+        width: 120px;
+        height: 25px;
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+
+    &_main {
+        margin-top: 67px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        &:hover {
+            box-shadow: 4px 3px 15px rgb(216, 12, 90);
+            cursor: pointer;
+            background-color: #ff0000;
+        }
+        @include phone {
+            margin-top: 45px;
+            width: 220px;
+            height: 40px;
+            font-size: 15px;
+            &:hover {
+                background-color: $main-color;
+            }          
+        }
+    }
+
+    &_submit {
+        width: 300px;
+        height: 55px;
+        border-radius: 5px;
+        font-size: 16px;
+        &:hover {
+            box-shadow: 4px 3px 15px rgb(216, 12, 90);
+            cursor: pointer;
+            background-color: #ff0000;
+        }
+        @include phone {
+            margin-top: 45px;
+            width: 220px;
+            height: 40px;
+            font-size: 15px;
+            &:hover {
+                background-color: $main-color;
+            }          
+        }
+    }
+    &_catalog {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+        &:hover {
+            box-shadow: 4px 3px 15px rgb(216, 12, 90);
+            cursor: pointer;
+            background-color: #ff0000;
+        }
+    }
+}
