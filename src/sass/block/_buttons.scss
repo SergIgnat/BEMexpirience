@@ -8,10 +8,12 @@
     font-weight: 500;
     text-transform: uppercase;
     border: none;
+    transition: 0.6s all;
     &:hover {
-        box-shadow: 4px 3px 15px rgb(216, 12, 90);
+        box-shadow: 0 0 15px rgb(39, 223, 255);
         cursor: pointer;
-        background-color: #ff0000;
+        background-color: #3372b998;
+        border: 3px outset rgba(255, 255, 255, 0.788);
     }
 
     @include phone {
@@ -28,9 +30,10 @@
         height: 50px;
         font-size: 16px;
         &:hover {
-            box-shadow: 4px 3px 15px rgb(216, 12, 90);
+            box-shadow: 0 0 15px rgb(39, 223, 255);
             cursor: pointer;
-            background-color: #ff0000;
+            background-color: #3372b998;
+            border: 3px outset rgba(255, 255, 255, 0.788);
         }
         @include phone {
             margin-top: 45px;
@@ -49,9 +52,10 @@
         border-radius: 5px;
         font-size: 16px;
         &:hover {
-            box-shadow: 4px 3px 15px rgb(216, 12, 90);
+            box-shadow: 0 0 15px rgb(39, 223, 255);
             cursor: pointer;
-            background-color: #ff0000;
+            background-color: #3372b998;
+            border: 3px outset rgba(255, 255, 255, 0.788);
         }
         @include phone {
             margin-top: 45px;
@@ -68,9 +72,10 @@
         height: 40px;
         font-size: 14px;
         &:hover {
-            box-shadow: 4px 3px 15px rgb(216, 12, 90);
+            box-shadow: 0 0 15px rgb(39, 223, 255);
             cursor: pointer;
-            background-color: #ff0000;
+            background-color: #00c01aa1;
+            border: 3px outset rgba(255, 255, 255, 0.788);
         }
     }
 }
