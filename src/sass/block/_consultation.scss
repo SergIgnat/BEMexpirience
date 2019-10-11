@@ -22,4 +22,17 @@
             text-align: center;
         }
     }
+    .modalError {
+        border: 1px solid red;
+        &:focus {
+            outline: none;
+        }
+    }
+    label.modalError {
+        color: $text-color;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
 }

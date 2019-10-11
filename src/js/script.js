@@ -66,7 +66,66 @@ $(document).ready(function(){
 			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
 			$('.overlay, #order').fadeIn('slow');
 		})
-	})	
+	})
+	
+	
 
+
+	// $('#consultation-form').validate ();
+	// $('#consultation form').validate ({
+	// 	errorClass: "modalError",
+	// 	rules: {
+	// 		name: {
+	// 			required: true,
+	// 			minlength: 2
+	// 		},
+	// 		phone: "required",
+	// 		email: {
+	// 			required: true,
+	// 			email: true
+	// 		}
+	// 	},
+	// 	messages: {
+	// 		name: {
+	// 			required: "Пожалуйста, введите своё имя",
+	// 			minlength: jQuery.validator.format("Имя должно содердать минимум {0} символа!")
+	// 		  },
+	// 		phone: 'Пожалуйста, введите свой номер телефона',
+	// 		email: {
+	// 			email: 'Введен неправильный адрес почты',
+	// 			required: 'Пожалуйста, введите свой Email'			
+	// 		}
+	// 	}
+	// });
+	function modalValidate(form) {
+		$(form).validate ({
+			errorClass: "modalError",
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: {
+					required: "Пожалуйста, введите своё имя",
+					minlength: jQuery.validator.format("Имя должно содердать минимум {0} символа!")
+				},
+				phone: 'Пожалуйста, введите свой номер телефона',
+				email: {
+					email: 'Введен неправильный адрес почты',
+					required: 'Пожалуйста, введите свой Email'			
+				}
+			}
+		})
+	}
+	modalValidate("#consultation_form");
+	modalValidate("#consultation form");
+	modalValidate("#order form");
 });
 

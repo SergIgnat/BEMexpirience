@@ -51,8 +51,22 @@
     }
     &_mini {
         min-height: 140px;
+    } 
+    .modalError {
+        border: 1px solid red;
+        &:focus {
+            outline: none;
+        }
+    }
+    label.modalError {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 14px;
     }
 }
+
+
 
 #consultation, #order, #thanks {
     display: none;
