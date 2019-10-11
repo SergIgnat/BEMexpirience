@@ -2,7 +2,7 @@
 @import 'base/variables';
 
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'Museo', sans-serif;
 }
 
 .container {
@@ -26,7 +26,8 @@
 @import 'block/carousel';
 @import 'block/catalog';
 @import 'block/reviews';
-@import 'block/footer'
+@import 'block/footer';
+@import 'block/modal';
 
 
     

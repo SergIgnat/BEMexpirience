@@ -13,10 +13,11 @@
         box-shadow: 0 0 15px rgb(39, 223, 255);
         cursor: pointer;
         background-color: #3372b998;
-        border: 3px outset rgba(255, 255, 255, 0.788);
+        border: 2px outset rgba(255, 255, 255, 0.788);
     }
 
     @include phone {
+        font-size: 11px;
         width: 120px;
         height: 25px;
         &:hover {
@@ -33,7 +34,7 @@
             box-shadow: 0 0 15px rgb(39, 223, 255);
             cursor: pointer;
             background-color: #3372b998;
-            border: 3px outset rgba(255, 255, 255, 0.788);
+            border: 2px outset rgba(255, 255, 255, 0.788);
         }
         @include phone {
             margin-top: 45px;
@@ -55,7 +56,7 @@
             box-shadow: 0 0 15px rgb(39, 223, 255);
             cursor: pointer;
             background-color: #3372b998;
-            border: 3px outset rgba(255, 255, 255, 0.788);
+            border: 2px outset rgba(255, 255, 255, 0.788);
         }
         @include phone {
             margin-top: 45px;
@@ -75,7 +76,7 @@
             box-shadow: 0 0 15px rgb(39, 223, 255);
             cursor: pointer;
             background-color: #00c01aa1;
-            border: 3px outset rgba(255, 255, 255, 0.788);
+            border: 2px outset rgba(255, 255, 255, 0.788);
         }
     }
 }
