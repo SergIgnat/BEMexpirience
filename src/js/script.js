@@ -14,7 +14,9 @@ $(document).ready(function(){
               }
             }
         ]
-    });
+	});
+	
+	// Catalog
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
       $(this)
@@ -22,21 +24,7 @@ $(document).ready(function(){
         .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
     });
 
-    // $('.catalog-item__link').each(function(i){
-    // 	$(this).on('click', function(e){
-	// 		e.preventDefault();
-	// 		$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-	// 		$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active')
-    // 	})
-	// })
-	
-	// $('.catalog-item__link-back').each(function(i){
-    // 	$(this).on('click', function(e){
-	// 		e.preventDefault();
-	// 		$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-	// 		$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active')
-    // 	})
-	// })
+	// catalog- item
 	
 	function toggleSlide(item) {
 		$(item).each(function(i) {
@@ -53,6 +41,7 @@ $(document).ready(function(){
 
 
 	// Modal
+
 	$('[data-modal=consultation]').on('click', function() {
 		$('.overlay, #consultation').fadeIn('slow');
 	})
@@ -67,36 +56,10 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn('slow');
 		})
 	})
-	
-	
 
 
-	// $('#consultation-form').validate ();
-	// $('#consultation form').validate ({
-	// 	errorClass: "modalError",
-	// 	rules: {
-	// 		name: {
-	// 			required: true,
-	// 			minlength: 2
-	// 		},
-	// 		phone: "required",
-	// 		email: {
-	// 			required: true,
-	// 			email: true
-	// 		}
-	// 	},
-	// 	messages: {
-	// 		name: {
-	// 			required: "Пожалуйста, введите своё имя",
-	// 			minlength: jQuery.validator.format("Имя должно содердать минимум {0} символа!")
-	// 		  },
-	// 		phone: 'Пожалуйста, введите свой номер телефона',
-	// 		email: {
-	// 			email: 'Введен неправильный адрес почты',
-	// 			required: 'Пожалуйста, введите свой Email'			
-	// 		}
-	// 	}
-	// });
+	// Validate form
+
 	function modalValidate(form) {
 		$(form).validate ({
 			errorClass: "modalError",
@@ -127,5 +90,9 @@ $(document).ready(function(){
 	modalValidate("#consultation_form");
 	modalValidate("#consultation form");
 	modalValidate("#order form");
+
+	// maskedInput
+
+	$(".feed-form-phone").mask("+7 (999) 999-99-99");
 });
 
